@@ -1,0 +1,41 @@
+<?php
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $headers = "From: ".$name. "<" .$email.">\r\n";
+    $to = "for.sinohome@gmail.com"; 
+    $subject = "New Message from SinoHomeDeco Website";
+    $body = "Name: $name\nEmail: $email\nMessage: $message";
+
+    mail($to, $subject, $body, $headers) or die ('Error sending message');
+       echo ' <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Sino Home Deco</title>
+</head>
+<body>
+  <section class="intro" style="display: block;">
+    <h2>Message sent successfully!</h2>
+    <p>We will get back to you as soon as possible.</p>
+    <p>back to <a href="index.html#form" style="text-decoration: underline;">homepage</a></p>
+  </section>
+</body>
+</html>';
+
+?>
