@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0CCZWH9YR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B0CCZWH9YR');
+    </script>
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Sino Home Deco</title>
+</head>
+<body>
+    <style>
+
+        .blog-master-hero{
+            display: grid;
+            place-items: center;
+            position: relative;
+            height: 30vh;
+        }
+
+        .blog-master-hero img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .blog-master-hero h1{
+            color: var(--color-1);
+            margin-inline: auto;
+            text-shadow: 3px 0 10px var(--color-5);
+            font-size: var(--fs-l);
+            transform: translateY(1rem);
+        }
+
+        @media (width < 685px){
+
+            .blog-master-hero h1{
+                transform: translateY(2rem);
+            }
+        }
+        
+        .blog-master{
+            display: block;
+            gap: 1em;
+        }
+
+        .blog-master-heading{
+            background-color: var(--color-1);
+            position: relative;
+            color: var(--color-5);
+            z-index: 2;
+            padding-bottom: 2em;
+        }
+
+        .blog-master-preview {
+            position: relative;
+            height: 100dvh;
+            transform: translateY(-5em);
+            z-index: 1;
+        }
+
+
+    </style>
+    <header>
+        <p><span>
+            
+                <span style="width: 20px ; height: 20px">
+                    <img src="img/phone.svg" style="width: 100% ; height: 100%; object-fit: cover; " alt="">
+                </span>
+                <span class="b">
+                    <a href="tel:+1 310 962 9881"><span>310 962 9881</span></a>
+                    <a href="tel:+1 510 673 7032"><span>510 673 7032</span></a>
+                </span>
+            </span>
+            <span>
+                <span style="width: 20px ; height: 20px">
+                    <img src="img/email.svg" style="width: 100% ; height: 100%; object-fit: cover; " alt="">
+                </span>
+                <a href="mailto:info@sinohomedeco.com"><span>info@sinohomedeco.com</span></a>
+            </span>
+        </p>
+    </header>
+
+
+    <section id="hero" class="blog-master-hero overlay">
+        <img src="gallery/image-21-high_2.jpg" alt="">
+        <h1>Get Inspired</h1>
+    </section>
+    <nav class="navbar">
+        <ul class="nav-item">
+            <a href="index.html#hero"><li>Home</li></a>
+            <a href="index.html#about-us"><li>About Us</li></a>
+            <a href="index.html#services"><li>Services</li></a>
+            <a href="index.html#gallery"><li>Gallery</li></a>
+            <a href="index.html#blog"><li>Blog</li></a>
+            <a href="index.html#team"><li>Team</li></a>
+            <a href="index.html#faq"><li>FAQs</li></a>
+            <a href="index.html#contact"><li>Contact Us</li></a>
+        </ul>
+    </nav>
+    <!-- Custom Calendly Booking Button -->
+        <button id="custom-calendly-button">Book a Free Estimate</button>
+
+        <!-- Script to Initialize Calendly Popup on Button Click -->
+        <script type="text/javascript">
+            document.getElementById('custom-calendly-button').addEventListener('click', function() {
+                Calendly.showPopupWidget('https://calendly.com/sinohomedeco?hide_gdpr_banner=1&primary_color=bd610b');
+            });
+        </script>
+    <section id="blog-master" class="blog-master">
+        <div class="blog-master-heading">
+          <h3>Explore Our Projects & Design Tips</h3>
+            <p>Discover the design secrets behind stunning spaces created for leading brands and discerning clients. Find inspiration for your own projects and practical design tips in our blog.</p>
+        </div>
+         <div class="blog-master-preview">
+          <iframe src="https://sinohomedeco.wordpress.com/blog" width="100%" height="100%" frameborder="0"></iframe></div>
+  
+      </section>
+    <footer class=" overlay-dark">
+        <div class="footer-container">
+            <div class="footer-name">
+                <h1 style="font-size: 7em; line-height: 0.78; letter-spacing: 0.8; font-weight: 1000;">Sino Home Deco</h1>
+                <div><p>License # 1117372</p></div>
+            </div>
+            <div class="footer-subcontainer">
+                <div class="footer-sitemap">
+                    <h4>Company</h4>
+                    <ul class="footer nav">
+                        <a href="index.html#hero"><li>Home</li></a>
+                        <a href="index.html#about-us"><li>About Us</li></a>
+                        <a href="index.html#services"><li>Services</li></a>
+                        <a href="index.html#gallery"><li>Gallery</li></a>
+                        <a href="index.html#blog"><li>Blog</li></a>
+                        <a href="index.html#team"><li>Team</li></a>
+                        <a href="index.html#faq"><li>FAQs</li></a>
+                        <a href="index.html#contact"><li>Contact Us</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+
+                    <div>
+                        <div style="display: flex; align-items: start;">
+                            <span style="width: 18px ; height: 18px; margin: 1.2em .5em 0 0;">
+                                <img src="img/phone.svg" style="width: 100% ; height: 100%; object-fit: cover; " alt="">
+                            </span>
+                            <p><a href="tel:+1 310 962 9881">310 962 9881</a> <br> Leo Nah</p>
+                        </div>
+                        <div style="display: flex; align-items: start;">
+                            <span style="width: 18px ; height: 18px; margin: 1.2em .5em 0 0;">
+                                <img src="img/location.svg" style="width: 100% ; height: 100%; object-fit: cover; " alt="">
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=39407+Parkhurst+Drive,+Fremont,+CA+94538" target="_blank"><address><p>39407 Parkhurst Drive <br> Fremont CA94538</p></address></a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="font-size: 0.9em;"><strong>Sino Home Deco<br>Design, build, repair, all in one place.</strong></p>
+            <p style="font-size: 0.8em;"> Copyright 2024 Sino Home. All rights reserved. </p>
+        </div>
+        
+    </footer>
+            <!-- Include Calendly's Widget JS -->
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</body>
+</html>
